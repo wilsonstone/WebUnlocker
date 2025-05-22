@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "网页解锁大师",
+  "version": "1.0",
+  "description": "去除水印、解锁右键和复制限制",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["unlock.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": []
+}
